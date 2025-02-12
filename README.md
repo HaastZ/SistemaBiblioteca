@@ -36,7 +36,7 @@ Bem-vindo ao repositório do Sistema de Livraria, um projeto desenvolvido como p
 
 # ⚡ Como Executar o Projeto
 
-- Clone o repositório: git clone https://github.com/HaastZ/SistemaBiblioteca-Rocketseat.git
+- Clone o repositório: git clone https://github.com/HaastZ/SistemaBiblioteca.git
 
 - Abra o projeto em sua IDE (IntelliJ IDEA, Eclipse, etc.).
 
