@@ -9,6 +9,8 @@ public class Autor {
     private LocalDate dataNascimento;
 
     public Autor(String nome, LocalDate dataNascimento) {
+        Objects.requireNonNull(nome, "Você não pode criar um usuario sem nome"); // Não pode passar valores nulos
+        Objects.requireNonNull(dataNascimento, "Você não pode criar um usuario sem data de nascimento"); // Não pode passar valores nulos
         this.id = count++;
         this.nome = nome;
         this.dataNascimento = dataNascimento;

@@ -12,6 +12,8 @@ public class Emprestimo {
     private LocalDateTime dataDevolucao;
 
     public Emprestimo(Usuario usuario, Livro livro) {
+        Objects.requireNonNull(usuario, "Você não pode criar um empréstimo sem usuario"); // Não pode passar valores nulos
+        Objects.requireNonNull(livro, "Você não pode criar um empréstimo sem livro"); // Não pode passar valores nulos
         this.usuario = usuario;
         this.livro = livro;
         this.id = count++;

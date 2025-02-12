@@ -12,6 +12,8 @@ public class Livro {
     private LocalDate dataAtualizacao;
 
     public Livro(String titulo, Autor autor) {
+        Objects.requireNonNull(titulo, "Você não pode criar um livro sem titulo"); // Não pode passar valores nulos
+        Objects.requireNonNull(autor, "Você não pode criar um livro sem autor"); // Não pode passar valores nulos
         this.id = count++;
         this.titulo = titulo;
         this.autor = autor;
